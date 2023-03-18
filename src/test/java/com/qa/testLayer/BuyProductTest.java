@@ -13,6 +13,8 @@ public class BuyProductTest extends TestBase{
 	@Test(priority=7)
 	public void buyProduct() throws InterruptedException {
 		
+	
+		
 		home.clickLoginButtons();
 		
 		login.enterUsername("shivrajbankar0000@gmail.com");

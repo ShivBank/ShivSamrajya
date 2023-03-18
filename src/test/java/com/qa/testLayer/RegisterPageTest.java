@@ -12,7 +12,7 @@ public class RegisterPageTest extends TestBase {
 	
 	// To verify register page functionality
 	
-	@Test(priority=3)
+	@Test
 	public void verifyRegisterPage() throws InterruptedException {
 		
 		home.clickRegisterButton();
@@ -25,7 +25,7 @@ public class RegisterPageTest extends TestBase {
 		
 		Thread.sleep(3000);
 		
-		register.selectState();
+		register.selectState("3");
 		
 		register.selectDistrict();
 		

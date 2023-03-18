@@ -9,7 +9,7 @@ public class HomePageTest extends TestBase {
 
 	
 	
-	@Test(priority=1)
+	@Test
 	public void verifyHomePage() throws InterruptedException {
 	
 		

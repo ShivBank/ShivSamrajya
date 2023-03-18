@@ -60,11 +60,11 @@ public class RegisterPage extends TestBase{
 	@FindBy(xpath="//select[@id='state_id']")
 	private WebElement state;
 	
-	public void selectState() {
+	public void selectState(String sta) {
 		
 		select = new Select(state);
 		
-		select.selectByValue("1");
+		select.selectByValue(sta);
 		
 	}
 	

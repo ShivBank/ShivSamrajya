@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SuiteShivSamrajya]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="TestShivSamrajya(failed)">
+<suite name="Failed suite [SuiteShivsamrajya]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="TestShivsamrajya(failed)">
     <classes>
+      <class name="com.qa.testLayer.WishListPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifywishList"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.WishListPageTest -->
+      <class name="com.qa.testLayer.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyHomePage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.HomePageTest -->
+      <class name="com.qa.testLayer.ContactPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyContactPage"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.ContactPageTest -->
       <class name="com.qa.testLayer.RegisterPageTest">
         <methods>
           <include name="tearDown"/>
@@ -17,27 +39,13 @@
           <include name="verifyAddToCart_Wishlist"/>
         </methods>
       </class> <!-- com.qa.testLayer.AddToCart_WislListTest -->
-      <class name="com.qa.testLayer.LoginPageTest">
+      <class name="com.qa.testLayer.SearchPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyLoginPage"/>
+          <include name="searchProduct"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.testLayer.LoginPageTest -->
-      <class name="com.qa.testLayer.MainDashboardTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyDashboard"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.testLayer.MainDashboardTest -->
-      <class name="com.qa.testLayer.ContactPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyContactPage"/>
-        </methods>
-      </class> <!-- com.qa.testLayer.ContactPageTest -->
+      </class> <!-- com.qa.testLayer.SearchPageTest -->
       <class name="com.qa.testLayer.BuyProductTest">
         <methods>
           <include name="tearDown"/>
@@ -45,6 +53,20 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.testLayer.BuyProductTest -->
+      <class name="com.qa.testLayer.MainDashboardTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDashboard"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.MainDashboardTest -->
+      <class name="com.qa.testLayer.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoginPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.LoginPageTest -->
     </classes>
-  </test> <!-- TestShivSamrajya(failed) -->
-</suite> <!-- Failed suite [SuiteShivSamrajya] -->
+  </test> <!-- TestShivsamrajya(failed) -->
+</suite> <!-- Failed suite [SuiteShivsamrajya] -->

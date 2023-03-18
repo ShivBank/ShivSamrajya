@@ -10,7 +10,7 @@ import com.qa.testBase.TestBase;
 public class ContactPage extends TestBase{
 	
 	
-	
+		
 	// To verify enquiry page 
 	
 	
@@ -70,3 +70,8 @@ public class ContactPage extends TestBase{
 	
 	
 }
+
+
+
+
+

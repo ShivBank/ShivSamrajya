@@ -34,7 +34,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	
 	
-	public static WebDriver driver;
+     public static WebDriver driver;
 	
 	 public HomePage home;
 	 
@@ -70,7 +70,7 @@ public class TestBase {
 	@BeforeMethod
 	public void setUp() {
 		
-		 String br = "Chrome";
+		String br = "Chrome";
 		
 		if(br.equalsIgnoreCase("Chrome")) {
 			
@@ -115,6 +115,9 @@ public class TestBase {
 		
 		driver.get("https://test.shivsamrajya.com");
 		
+		
+		
+		
 		home = new HomePage();
 		
 		login = new LoginPage();
@@ -140,6 +143,9 @@ public class TestBase {
 		jse = (JavascriptExecutor)driver;
 	
 	}
+
+
+	
 	
 	@AfterMethod
 	public void tearDown() {

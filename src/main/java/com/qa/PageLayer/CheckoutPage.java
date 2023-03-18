@@ -25,7 +25,7 @@ public class CheckoutPage extends TestBase{
 		
 //		int i = q;
 //		
-//		for(i=0;i<q;i++) {
+//		for(i=0;i<q;i++) 	
 //			
 //			quantity.click();
 		
